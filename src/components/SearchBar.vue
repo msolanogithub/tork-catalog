@@ -29,7 +29,7 @@ const clearSearch = () => {
       @input="handleSearch"
       type="text"
       placeholder="Buscar..."
-      class="w-full bg-brand-section text-sm text-white placeholder-brand-gray border border-brand-border rounded-full pl-10 pr-10 py-2.5 focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-all duration-300"
+      class="w-full bg-brand-section text-sm text-white placeholder-brand-gray rounded-full pl-10 pr-10 py-2.5 focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-all duration-300"
     />
     <button
       v-if="query"

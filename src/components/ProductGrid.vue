@@ -8,11 +8,12 @@ defineProps<{
 </script>
 
 <template>
-  <div v-if="products.length > 0" class="flex flex-col gap-6">
-    <ProductCard 
-      v-for="product in products" 
-      :key="product.sku" 
-      :product="product" 
+  <div v-if="products.length > 0" class="grid grid-cols-1 gap-x-8 gap-y-4">
+    <ProductCard
+        v-for="(product, index) in products"
+        :key="product.sku"
+        :product="product"
+        :reverse="index % 2 === 1"
     />
   </div>
   <div v-else class="flex flex-col items-center justify-center py-12 text-center border border-dashed border-brand-border rounded-xl bg-brand-section">

@@ -13,7 +13,7 @@ const totalItems = computed(() => cartStore.totalItems);
 
 <template>
   <q-layout view="hHh lpR fFf" class="bg-[#020202] min-h-screen text-white flex justify-center">
-    <div class="w-full max-w-[500px] min-h-screen bg-brand-dark border-x border-brand-border flex flex-col shadow-[0_0_40px_rgba(0,0,0,0.6)] relative bg-deep-radial">
+    <div class="w-full max-w-5xl min-h-screen bg-brand-dark border-x border-brand-border flex flex-col shadow-[0_0_40px_rgba(0,0,0,0.6)] relative">
       <!-- Header -->
       <Header />
 
